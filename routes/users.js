@@ -87,7 +87,7 @@ router.post("/login", async (req, res) => {
     }
 })
 
-
+// מחיקה
 // http://localhost:3000/users/646b3a45c4605a71e3c1a0af
 router.delete("/:idDel", async (req, res) => {
     try {
