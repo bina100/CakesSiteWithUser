@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt")
 const { UserModel, validateSignIn, validateLogin, genToken } = require("../models/userModel");
 const router = express.Router()
 const { authToken } = require("../auth/authToken")
-
+// הצגת users
 // http://localhost:3000/
 // http://localhost:3000/users/?perPage=4
 // http://localhost:3000/users/?page=2&perPage=3
@@ -37,6 +37,7 @@ router.get("/userInfo", authToken, async (req, res) => {
 
 })
 
+// הרשמת לקוח
 // http://localhost:3000/users
 router.post("/", async (req, res) => {
     let validBody = validateSignIn(req.body)
@@ -86,7 +87,7 @@ router.post("/login", async (req, res) => {
     }
 })
 
-
+// מחיקה
 // http://localhost:3000/users/646b3a45c4605a71e3c1a0af
 router.delete("/:idDel", async (req, res) => {
     try {
