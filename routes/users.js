@@ -3,7 +3,7 @@ const bcrypt = require("bcrypt")
 const { UserModel, validateSignIn, validateLogin, genToken } = require("../models/userModel");
 const router = express.Router()
 const { authToken } = require("../auth/authToken")
-
+// הצגת users
 // http://localhost:3000/
 // http://localhost:3000/users/?perPage=4
 // http://localhost:3000/users/?page=2&perPage=3
