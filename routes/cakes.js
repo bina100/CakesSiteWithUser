@@ -52,7 +52,7 @@ router.get("/", async (req, res) => {
     }
 })
 
-// חיפוש בשם העוגה
+// חיפוש מילה או חלק בשם העוגה 
 // http://localhost:3000/cakes/search?s=w
 router.get("/search", authToken, async (req, res) => {
     try {
