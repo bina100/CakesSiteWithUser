@@ -37,6 +37,7 @@ router.get("/userInfo", authToken, async (req, res) => {
 
 })
 
+// הרשמת לקוח
 // http://localhost:3000/users
 router.post("/", async (req, res) => {
     let validBody = validateSignIn(req.body)
